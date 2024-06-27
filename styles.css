@@ -1,0 +1,195 @@
+/* Bagian hero text */
+.hero-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff; /* Warna teks */
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Bagian welcome paragraph */
+.welcome p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: -25px;
+}
+
+/* Gambar produk di halaman Home dan Variants */
+.products .col-sm-4 img,
+.variant .img-fluid {
+    max-width: 100%; /* Lebar maksimum */
+    max-height: 200px; /* Tinggi maksimum */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+/* Tombol SHOP NOW di halaman Home */
+.btn-secondary {
+    background-color: #ccc; /* Warna latar belakang */
+    border: none; /* Tanpa border */
+    padding: 12px 24px; /* Padding */
+    font-size: 18px; /* Ukuran font */
+    border-radius: 30px; /* Border radius */
+    text-decoration: none; /* Tanpa garis bawah */
+    transition: background 0.3s; /* Transisi untuk hover */
+}
+
+.btn-secondary:hover {
+    background-color: #bbb; /* Warna latar belakang saat hover */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .about, .variant {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .variant-text {
+        padding-left: 0;
+    }
+
+    .hero-text h2 {
+        font-size: 28px; /* Ukuran font untuk layar kecil */
+    }
+
+    .welcome p {
+        width: 100%; /* Lebar paragraf untuk layar kecil */
+    }
+}
+
+/* Styling khusus untuk halaman "About" */
+.about-text {
+    text-align: left; /* Rata kanan kiri untuk teks di dalam col-md-6 */
+    padding: 20px 50px; /* Padding atas dan bawah 20px, kiri dan kanan 50px */
+    margin-top: 50px;
+}
+
+.about-text h3 {
+    font-size: 20px;
+    color: #666;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify; /* Rata kanan kiri teks */
+    margin-bottom: 20px; /* Ruang bawah tambahan antara paragraf */
+}
+
+/* Menggeser foto ke kanan sedikit */
+.col-md-6 img {
+    margin-left: 5px; /* Menggeser foto ke kanan sejauh 20px */
+}
+
+/* Tombol "Selengkapnya" diatur ke tengah */
+.about-text .btn-secondary {
+    display: block; /* Membuat tombol menjadi blok untuk menerapkan text-align */
+    margin: 0 auto; /* Meletakkan tombol di tengah secara horizontal */
+    margin-top: 10px; /* Jarak atas dari teks */
+}
+
+/* Styling khusus untuk halaman Variants */
+.variant {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-direction: column; /* Menata elemen dalam kolom */
+    align-items: center; /* Pusatkan item secara horizontal */
+    text-align: center; /* Pusatkan teks */
+    margin-bottom: 40px; /* Jarak bawah antar varian */
+}
+
+.variant .img-fluid {
+    max-width: 100%; /* Lebar maksimum gambar */
+    margin-bottom: 15px; /* Jarak bawah gambar */
+}
+
+.variant .variant-text {
+    max-width: 80%; /* Lebar maksimum teks */
+}
+
+.variant .variant-text h2 {
+    font-size: 24px; /* Ukuran font untuk judul */
+    margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+.variant .variant-text p {
+    font-size: 16px; /* Ukuran font untuk teks */
+    line-height: 1.5; /* Tinggi baris */
+    text-align: justify; /* Rata kanan kiri */
+    margin-bottom: 10px; /* Jarak bawah */
+}
+
+.variant .variant-text .btn-secondary {
+    display: block; /* Membuat tombol menjadi blok */
+    margin: 10px auto 0; /* Margin atas dan bawah auto, margin kiri kanan 0 */
+    width: 180px; /* Lebar tombol */
+}
+
+.variant .variant-text p:nth-child(2) {
+    text-align: center; /* Pusatkan teks pada paragraf kedua */
+}
+
+.testimonials {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+.testimonial {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.testimonial img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.testimonial .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.testimonial .text {
+    font-size: 14px;
+    color: #555;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-title h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.section-title p {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.section-title .btn-secondary.view-more-btn {
+    background-color: #ccc; /* Warna latar belakang */
+    border: none; /* Tanpa border */
+    padding: 12px 24px; /* Padding */
+    font-size: 18px; /* Ukuran font */
+    border-radius: 30px; /* Border radius */
+    text-decoration: none; /* Tanpa garis bawah */
+    transition: background 0.3s; /* Transisi untuk hover */
+}
+.section-title .btn-secondary.view-more-btn:hover {
+    background-color: #bbb; /* Warna latar belakang saat hover */
+}
